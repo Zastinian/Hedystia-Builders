@@ -1,4 +1,4 @@
-const Util = require("../util/Util")
+const Util = require("../../util/Util")
 
 /* It's a class that creates a Discord embed. */
 class EmbedBuilder {
