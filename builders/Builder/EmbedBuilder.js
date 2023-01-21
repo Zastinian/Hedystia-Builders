@@ -156,14 +156,14 @@ class EmbedBuilder {
 
   /**
    * It takes an array of objects, and pushes each object into another array
-   * @param fields - Array&lt;MessageEmbedField&gt; | MessageEmbedField
+   * @param fields - Array&lt;EmbedBuilderField&gt; | EmbedBuilderField
    * @returns The return value is the instance of the class.
    */
   addFields(...fields) {
     if (Array.isArray(fields[0])) {
-      fields[0]?.map((val) => this.fields.push(MessageEmbed.transformFields(val)))
+      fields[0]?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)))
     } else {
-      fields?.map((val) => this.fields.push(MessageEmbed.transformFields(val)))
+      fields?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)))
     }
 
     return this
@@ -188,14 +188,14 @@ class EmbedBuilder {
 
   /**
    * It takes an array of objects, and then maps over each object, and then returns the mapped array
-   * @param fields - Array&lt;MessageEmbedField&gt; | MessageEmbedField
+   * @param fields - Array&lt;EmbedBuilderField&gt; | EmbedBuilderField
    * @returns The fields are being returned.
    */
   setFields(...fields) {
     if (Array.isArray(fields[0])) {
-      this.fields = fields[0]?.map((val) => MessageEmbed.transformFields(val))
+      this.fields = fields[0]?.map((val) => EmbedBuilder.transformFields(val))
     } else {
-      this.fields = fields?.map((val) => MessageEmbed.transformFields(val))
+      this.fields = fields?.map((val) => EmbedBuilder.transformFields(val))
     }
 
     return this
