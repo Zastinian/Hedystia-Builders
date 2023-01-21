@@ -1,7 +1,7 @@
 {
   "name": "esmile-builders",
   "version": "1.0.0",
-  "description": "",
+  "description": "Builders for discord.js and eris",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
