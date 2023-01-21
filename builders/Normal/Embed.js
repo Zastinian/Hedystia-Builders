@@ -58,4 +58,4 @@ class Embed {
   }
 }
 
-export default Embed
+module.exports = Embed

@@ -50,4 +50,4 @@ class SelectMenu {
   }
 }
 
-export default SelectMenu
+module.exports = SelectMenu

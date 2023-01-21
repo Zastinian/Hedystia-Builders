@@ -1,3 +1,4 @@
+/* It's a list of colors. */
 module.exports.Colors = {
   DEFAULT: 0x000000,
   WHITE: 0xffffff,

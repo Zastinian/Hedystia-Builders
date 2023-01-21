@@ -1,4 +1,5 @@
 const {Colors} = require("./Constants")
+/* It resolves a color to a hexadecimal value */
 class Util {
   static resolveColor(color) {
     if (typeof color === "string") {

@@ -17,4 +17,4 @@ class Row {
   }
 }
 
-export default Row
+module.exports = Row
