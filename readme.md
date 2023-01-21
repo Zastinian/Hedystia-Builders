@@ -23,13 +23,15 @@ yarn add esmile-builders
 
 ### Builders Like Discord.js
 
-| ----------------- |
-| `Embed Builder` |
+| Function        | Description      |
+| --------------- | ---------------- |
+| `Embed Builder` | `Discord Embeds` |
 
 ### Normal
 
-| ----------------- |
-| `Button` |
-| `Embed` |
-| `Row` |
-| `SelectMenu` |
+| Function     | Description       |
+| ------------ | ----------------- |
+| `Button`     | `Discord Buttons` |
+| `Embed`      | `Discord Embeds`  |
+| `Row`        | `Discord Rows`    |
+| `SelectMenu` | `Discord Menu`    |
