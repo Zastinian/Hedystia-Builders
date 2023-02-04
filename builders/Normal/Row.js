@@ -8,13 +8,13 @@ class Row {
    * @returns The row object.
    */
   constructor(data = {}) {
-    this.components = data.components
+    this.components = data.components;
     let row = {
       type: 1,
       components: this.components,
-    }
-    return row
+    };
+    return row;
   }
 }
 
-module.exports = Row
+module.exports = Row;

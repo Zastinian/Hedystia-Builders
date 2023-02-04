@@ -8,12 +8,12 @@ class Button {
    * @returns The button object.
    */
   constructor({emoji, label, url, customid, style, disabled}) {
-    this.emoji = {...emoji} ?? undefined
-    this.label = label ?? undefined
-    this.url = url ?? undefined
-    this.customid = customid ?? undefined
-    this.style = style ?? undefined
-    this.disabled = disabled ?? false
+    this.emoji = {...emoji} ?? undefined;
+    this.label = label ?? undefined;
+    this.url = url ?? undefined;
+    this.customid = customid ?? undefined;
+    this.style = style ?? undefined;
+    this.disabled = disabled ?? false;
     const button = {
       type: 2,
       custom_id: this.customid,
@@ -22,9 +22,9 @@ class Button {
       emoji: this.emoji,
       disabled: this.disabled,
       url: this.url,
-    }
-    return button
+    };
+    return button;
   }
 }
 
-module.exports = Button
+module.exports = Button;

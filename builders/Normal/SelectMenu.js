@@ -31,12 +31,12 @@ class SelectMenu {
    * @returns The object that is being returned is the object that is being created.
    */
   constructor({customid, placeholder, disabled, minvalues, maxvalues, options}) {
-    this.customid = customid ?? undefined
-    this.placeholder = placeholder ?? undefined
-    this.disabled = disabled ?? false
-    this.minvalues = minvalues ?? 1
-    this.maxvalues = maxvalues ?? 1
-    this.options = options ?? undefined
+    this.customid = customid ?? undefined;
+    this.placeholder = placeholder ?? undefined;
+    this.disabled = disabled ?? false;
+    this.minvalues = minvalues ?? 1;
+    this.maxvalues = maxvalues ?? 1;
+    this.options = options ?? undefined;
     let select = {
       type: 3,
       custom_id: this.customid,
@@ -45,9 +45,9 @@ class SelectMenu {
       min_values: this.min_values,
       max_values: this.max_values,
       disabled: this.disabled,
-    }
-    return select
+    };
+    return select;
   }
 }
 
-module.exports = SelectMenu
+module.exports = SelectMenu;

@@ -30,4 +30,4 @@ module.exports.Colors = {
   GREYPLE: 0x99aab5,
   DARK_BUT_NOT_BLACK: 0x2c2f33,
   NOT_QUITE_BLACK: 0x23272a,
-}
+};

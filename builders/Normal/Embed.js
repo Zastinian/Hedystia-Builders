@@ -18,19 +18,19 @@ class Embed {
    * @returns The embed object.
    */
   constructor({title, color, author, url, description, image, footer, timestamp, thumbnail, fields}) {
-    this.title = title ?? undefined
-    this.color = color ?? undefined
-    this.author = {...author} ?? {}
-    this.url = url ?? undefined
-    this.description = description ?? undefined
-    this.image = image ?? undefined
-    this.footer = {...footer} ?? {}
-    this.timestamp = timestamp ?? undefined
-    this.thumbnail = thumbnail ?? undefined
+    this.title = title ?? undefined;
+    this.color = color ?? undefined;
+    this.author = {...author} ?? {};
+    this.url = url ?? undefined;
+    this.description = description ?? undefined;
+    this.image = image ?? undefined;
+    this.footer = {...footer} ?? {};
+    this.timestamp = timestamp ?? undefined;
+    this.thumbnail = thumbnail ?? undefined;
     if (fields) {
-      this.fields = [...fields]
+      this.fields = [...fields];
     } else {
-      this.fields = undefined
+      this.fields = undefined;
     }
     const embed = {
       title: this.title,
@@ -53,9 +53,9 @@ class Embed {
         name: this.author.name ?? undefined,
         url: this.author.image ?? undefined,
       },
-    }
-    return embed
+    };
+    return embed;
   }
 }
 
-module.exports = Embed
+module.exports = Embed;

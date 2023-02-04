@@ -5,4 +5,4 @@ module.exports = {
   Success: 3,
   Danger: 4,
   Link: 5,
-}
+};

@@ -1,4 +1,4 @@
-const Util = require("../../util/Util")
+const Util = require("../../util/Util");
 
 /* It's a class that creates a Discord embed. */
 class EmbedBuilder {
@@ -8,12 +8,12 @@ class EmbedBuilder {
    */
   constructor(data = {}) {
     /* It's assigning the values of the object to the class properties. */
-    this.title = data.title ?? undefined
-    this.type = data.type ?? "rich"
-    this.description = data.description ?? undefined
-    this.url = data.url ?? undefined
-    this.timestamp = data.timestamp ?? undefined
-    this.color = data.color ? Util.resolveColor(data.color) : undefined
+    this.title = data.title ?? undefined;
+    this.type = data.type ?? "rich";
+    this.description = data.description ?? undefined;
+    this.url = data.url ?? undefined;
+    this.timestamp = data.timestamp ?? undefined;
+    this.color = data.color ? Util.resolveColor(data.color) : undefined;
     this.footer = data.footer
       ? {
           text: data.footer.text,
@@ -21,7 +21,7 @@ class EmbedBuilder {
           icon_url: data.footer.iconURL ?? data.footer.icon_url,
           proxyIconURL: data.footer.proxy_icon_url ?? data.footer.proxyIconURL,
         }
-      : undefined
+      : undefined;
     this.image = data.image
       ? {
           url: data.image.url,
@@ -29,7 +29,7 @@ class EmbedBuilder {
           height: data.image.height,
           width: data.image.width,
         }
-      : undefined
+      : undefined;
     this.thumbnail = data.thumbnail
       ? {
           url: data.thumbnail.url,
@@ -37,9 +37,9 @@ class EmbedBuilder {
           height: data.thumbnail.height,
           width: data.thumbnail.width,
         }
-      : undefined
-    this.video = data.video ?? undefined
-    this.provider = data.provider ?? undefined
+      : undefined;
+    this.video = data.video ?? undefined;
+    this.provider = data.provider ?? undefined;
     this.author = data.author
       ? {
           name: data.author.name,
@@ -48,8 +48,8 @@ class EmbedBuilder {
           icon_url: data.author.iconURL ?? data.author.icon_url,
           proxyIconURL: data.author.proxy_icon_url ?? data.author.proxyIconURL,
         }
-      : undefined
-    this.fields = data.fields ?? []
+      : undefined;
+    this.fields = data.fields ?? [];
   }
 
   /**
@@ -58,8 +58,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setTitle(title) {
-    this.title = title
-    return this
+    this.title = title;
+    return this;
   }
 
   /**
@@ -68,8 +68,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setDescription(description) {
-    this.description = description
-    return this
+    this.description = description;
+    return this;
   }
 
   /**
@@ -79,8 +79,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setURL(url) {
-    this.url = url
-    return this
+    this.url = url;
+    return this;
   }
 
   /**
@@ -89,8 +89,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setTimestamp(timestamp) {
-    this.timestamp = Util.generateISOString(timestamp)
-    return this
+    this.timestamp = Util.generateISOString(timestamp);
+    return this;
   }
 
   /**
@@ -99,8 +99,8 @@ class EmbedBuilder {
    * @returns The color of the object.
    */
   setColor(color) {
-    this.color = Util.resolveColor(color)
-    return this
+    this.color = Util.resolveColor(color);
+    return this;
   }
 
   /**
@@ -110,8 +110,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setFooter(footer) {
-    this.footer = footer
-    return this
+    this.footer = footer;
+    return this;
   }
 
   /**
@@ -125,8 +125,8 @@ class EmbedBuilder {
       ? {
           url: image.url,
         }
-      : undefined
-    return this
+      : undefined;
+    return this;
   }
 
   /**
@@ -140,8 +140,8 @@ class EmbedBuilder {
       ? {
           url: thumbnail.url,
         }
-      : undefined
-    return this
+      : undefined;
+    return this;
   }
 
   /**
@@ -150,8 +150,8 @@ class EmbedBuilder {
    * @returns The object itself.
    */
   setAuthor(author) {
-    this.author = author
-    return this
+    this.author = author;
+    return this;
   }
 
   /**
@@ -161,12 +161,12 @@ class EmbedBuilder {
    */
   addFields(...fields) {
     if (Array.isArray(fields[0])) {
-      fields[0]?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)))
+      fields[0]?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)));
     } else {
-      fields?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)))
+      fields?.map((val) => this.fields.push(EmbedBuilder.transformFields(val)));
     }
 
-    return this
+    return this;
   }
 
   /**
@@ -181,9 +181,9 @@ class EmbedBuilder {
       name: nm,
       value: vl,
       inline: il ?? undefined,
-    }
-    this.fields.push(fil)
-    return this
+    };
+    this.fields.push(fil);
+    return this;
   }
 
   /**
@@ -193,12 +193,12 @@ class EmbedBuilder {
    */
   setFields(...fields) {
     if (Array.isArray(fields[0])) {
-      this.fields = fields[0]?.map((val) => EmbedBuilder.transformFields(val))
+      this.fields = fields[0]?.map((val) => EmbedBuilder.transformFields(val));
     } else {
-      this.fields = fields?.map((val) => EmbedBuilder.transformFields(val))
+      this.fields = fields?.map((val) => EmbedBuilder.transformFields(val));
     }
 
-    return this
+    return this;
   }
 
   /**
@@ -218,7 +218,7 @@ class EmbedBuilder {
       url: this.url,
       footer: this.footer,
       fields: this.fields,
-    }
+    };
   }
 
   /**
@@ -232,8 +232,8 @@ class EmbedBuilder {
       name: fields.name,
       value: fields.value,
       inline: fields.inline ?? undefined,
-    }
+    };
   }
 }
 
-module.exports = EmbedBuilder
+module.exports = EmbedBuilder;
