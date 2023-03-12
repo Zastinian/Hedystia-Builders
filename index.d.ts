@@ -311,23 +311,31 @@ declare class Row {
   toObject(): {type: number; components: any[]};
 }
 
-interface SelectMenuOptions {
-  customid?: string;
-  placeholder?: string;
-  disabled?: boolean;
-  minvalues?: number;
-  maxvalues?: number;
-  options?: Array<SelectMenuOption>;
-}
+declare class SelectMenu {
+  constructor({
+    customid,
+    placeholder,
+    disabled,
+    minvalues,
+    maxvalues,
+    options,
+  }: {
+    customid?: string;
+    placeholder?: string;
+    disabled?: boolean;
+    minvalues?: number;
+    maxvalues?: number;
+    options?: SelectMenuOption[];
+  });
 
-interface SelectMenu {
-  type: number;
-  custom_id?: string;
-  placeholder?: string;
-  options?: Array<SelectMenuOption>;
-  min_values?: number;
-  max_values?: number;
-  disabled?: boolean;
+  private customid?: string;
+  private placeholder?: string;
+  private disabled?: boolean;
+  private minvalues?: number;
+  private maxvalues?: number;
+  private options?: SelectMenuOption[];
+
+  public build(): SelectMenuData;
 }
 
 interface SelectMenuOption {
@@ -341,32 +349,14 @@ interface SelectMenuOption {
   };
 }
 
-declare class SelectMenuBuilder {
-  constructor(options: SelectMenuOptions) {
-    this.custom_id = options.customid ?? undefined;
-    this.placeholder = options.placeholder ?? undefined;
-    this.disabled = options.disabled ?? false;
-    this.min_values = options.minvalues ?? 1;
-    this.max_values = options.maxvalues ?? 1;
-    this.options = options.options ?? undefined;
-  }
-  public build(): SelectMenu {
-    return {
-      type: 3,
-      custom_id: this.custom_id,
-      placeholder: this.placeholder,
-      options: this.options,
-      min_values: this.min_values,
-      max_values: this.max_values,
-      disabled: this.disabled,
-    };
-  }
-  private custom_id?: string;
-  private placeholder?: string;
-  private disabled?: boolean;
-  private min_values?: number;
-  private max_values?: number;
-  private options?: Array<SelectMenuOption>;
+interface SelectMenuData {
+  type: number;
+  custom_id?: string;
+  placeholder?: string;
+  options?: SelectMenuOption[];
+  min_values?: number;
+  max_values?: number;
+  disabled?: boolean;
 }
 
 declare const ButtonStyle: {
