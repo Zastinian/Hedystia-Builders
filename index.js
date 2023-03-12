@@ -1,3 +1,4 @@
+exports.ButtonBuilder = require("./builders/Builder/ButtonBuilder");
 exports.EmbedBuilder = require("./builders/Builder/EmbedBuilder");
 
 exports.Button = require("./builders/Normal/Button");

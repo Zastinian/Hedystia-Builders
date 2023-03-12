@@ -54,7 +54,7 @@ class EmbedBuilder {
 
   /**
    * It sets the title of the book and returns the book object.
-   * @param title - The title of the modal.
+   * @param {string} title - The title of the modal.
    * @returns The object itself.
    */
   setTitle(title) {
@@ -64,7 +64,7 @@ class EmbedBuilder {
 
   /**
    * The function sets the description of the object and returns the object.
-   * @param description - The description of the field.
+   * @param {string} description - The description of the field.
    * @returns The object itself.
    */
   setDescription(description) {
@@ -75,7 +75,7 @@ class EmbedBuilder {
   /**
    * This function sets the url property of the object it is called on to the value of the argument
    * passed in, and then returns the object it was called on.
-   * @param url - The URL to send the request to.
+   * @param {string} url - The URL to send the request to.
    * @returns The object itself.
    */
   setURL(url) {

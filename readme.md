@@ -23,9 +23,10 @@ yarn add esmile-builders
 
 ### Builders Like Discord.js
 
-| Function        | Description      |
-| --------------- | ---------------- |
-| `Embed Builder` | `Discord Embeds` |
+| Function         | Description       |
+| ---------------- | ----------------- |
+| `Embed Builder`  | `Discord Embeds`  |
+| `Button Builder` | `Discord Buttons` |
 
 ### Normal
 

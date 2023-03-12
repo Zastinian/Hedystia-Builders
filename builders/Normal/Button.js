@@ -12,7 +12,7 @@ class Button {
     this.label = label ?? undefined;
     this.url = url ?? undefined;
     this.customid = customid ?? undefined;
-    this.style = style ?? undefined;
+    this.style = style ?? 2;
     this.disabled = disabled ?? false;
     const button = {
       type: 2,

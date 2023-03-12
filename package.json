@@ -1,6 +1,6 @@
 {
   "name": "esmile-builders",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
   "types": "index.d.ts",
@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/Zastinian/Esmile-Builders.git"
   },
-  "keywords": [],
+  "keywords": [
+    "discord.js",
+    "eris",
+    "builders",
+    "embeds",
+    "esmile"
+  ],
   "author": "contact@mresmile.com",
   "license": "ISC",
   "bugs": {
