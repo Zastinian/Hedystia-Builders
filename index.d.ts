@@ -414,3 +414,30 @@ declare class RowBuilder {
   addComponents(buttons: ButtonProperties[]): this;
   build(): ButtonProperties[];
 }
+
+declare class SelectMenuBuilder {
+  type: number;
+  custom_id: string | null;
+  placeholder: string | null;
+  options: Array<{label: string; value: string; description?: string | null; emoji?: string | null}>;
+  min_values: number | null;
+  max_values: number | null;
+  disabled: boolean;
+
+  constructor();
+  setCustomId(customId: string): SelectMenuBuilder;
+  setPlaceholder(placeholder: string): SelectMenuBuilder;
+  addOption(label: string, value: string, description?: string | null, emoji?: string | null): SelectMenuBuilder;
+  setMinValues(minValues: number | null): SelectMenuBuilder;
+  setMaxValues(maxValues: number | null): SelectMenuBuilder;
+  setDisabled(disabled: boolean): SelectMenuBuilder;
+  build(): {
+    type: number;
+    custom_id: string;
+    placeholder: string | null;
+    options: Array<{label: string; value: string; description?: string | null; emoji?: string | null}>;
+    min_values: number | null;
+    max_values: number | null;
+    disabled: boolean;
+  };
+}
