@@ -402,3 +402,15 @@ declare class Util {
   static resolveColor(color: string): any;
   static generateISOString(date?: any): any;
 }
+
+type RowBuilderData = {
+  components?: ButtonProperties[];
+};
+
+declare class RowBuilder {
+  constructor(data?: RowBuilderData);
+  type: number;
+  components: ButtonProperties[];
+  addComponents(buttons: ButtonProperties[]): this;
+  build(): ButtonProperties[];
+}

@@ -1,6 +1,6 @@
 {
   "name": "esmile-builders",
-  "version": "1.5.1",
+  "version": "1.6.0-dev.0.0.3",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
   "types": "index.d.ts",
