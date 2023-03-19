@@ -1,6 +1,9 @@
 const Util = require("../../util/Util");
 
-/* It's a class that creates a Discord embed. */
+/**
+ * It's a class that creates a Discord embed.
+ * @class
+ */
 class EmbedBuilder {
   /**
    * It takes in an object, and then assigns the values of the object to the class properties.

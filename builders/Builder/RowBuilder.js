@@ -1,6 +1,9 @@
-/* It's a constructor function that takes an object as an argument and sets the type property to 1 and
+/**
+ * It's a constructor function that takes an object as an argument and sets the type property to 1 and
 the components property to the components property of the object if it exists, otherwise it sets it
-to an empty array */
+to an empty array
+ * @class
+ */
 class RowBuilder {
   /**
    * It's a constructor function that takes an object as an argument and sets the type property to 1 and

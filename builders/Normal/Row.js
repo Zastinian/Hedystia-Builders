@@ -4,7 +4,7 @@ class Row {
   /**
    * It takes an object with a property called components, and returns an object with a property called
    * components.
-   * @param [data] - {
+   * @param [data]
    * @returns The row object.
    */
   constructor(data = {}) {

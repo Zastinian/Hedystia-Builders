@@ -1,4 +1,7 @@
-/* It's a list of colors. */
+/**
+ *It's a list of colors.
+ * @module Colors
+ */
 module.exports.Colors = {
   DEFAULT: 0x000000,
   WHITE: 0xffffff,

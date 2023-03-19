@@ -1,4 +1,7 @@
-/* It's a class that allows you to build a SelectMenu object that can be sent to Discord */
+/**
+ * It's a class that allows you to build a SelectMenu object that can be sent to Discord
+ * @class
+ */
 class SelectMenuBuilder {
   constructor() {
     /**

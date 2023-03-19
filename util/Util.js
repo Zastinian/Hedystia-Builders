@@ -1,6 +1,9 @@
 import {Colors} from "./Constants";
 
-/** Utility functions for common tasks */
+/**
+ * Utility functions for common tasks
+ * @class
+ */
 class Util {
   /**
    * Resolves a color to a hexadecimal value

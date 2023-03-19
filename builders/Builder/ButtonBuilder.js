@@ -1,4 +1,7 @@
-/* The Button class is a class that represents a button. */
+/**
+ * The Button class is a class that represents a button.
+ * @class
+ */
 class ButtonBuilder {
   /**
    * The function takes an object as an argument, and then assigns the object's properties to the

@@ -1,4 +1,7 @@
-/* Exporting the object to be used in other files. */
+/**
+ * Exporting the object to be used in other files.
+ * @module ButtonStyle
+ */
 module.exports = {
   Primary: 1,
   Secondary: 2,
