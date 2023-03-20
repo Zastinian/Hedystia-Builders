@@ -13,6 +13,7 @@ yarn add esmile-builders
 ## Links
 
 - [Discord](https://discord.gg/aXvuUpvRQs) [Esmile Discord]
+- [Docs](https://docs.mresmile.com/docs/builders/start)
 
 ## Compatible With
 
