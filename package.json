@@ -1,5 +1,5 @@
 {
-  "name": "esmile-builders",
+  "name": "hedystia-builders",
   "version": "1.6.2",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zastinian/Esmile-Builders.git"
+    "url": "git+https://github.com/Zastinian/Hedystia-Builders.git"
   },
   "keywords": [
     "discord.js",
     "eris",
     "builders",
     "embeds",
-    "esmile"
+    "hedystia"
   ],
   "author": "contact@mresmile.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zastinian/Esmile-Builders/issues"
+    "url": "https://github.com/Zastinian/Hedystia-Builders/issues"
   },
-  "homepage": "https://github.com/Zastinian/Esmile-Builders#readme"
+  "homepage": "https://github.com/Zastinian/Hedystia-Builders#readme"
 }

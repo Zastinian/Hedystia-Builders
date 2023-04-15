@@ -1,9 +1,9 @@
 ## Installation
 
 ```
-npm i esmile-builders
+npm i hedystia-builders
 
-yarn add esmile-builders
+yarn add hedystia-builders
 ```
 
 ## Nodejs Version
@@ -12,7 +12,7 @@ yarn add esmile-builders
 
 ## Links
 
-- [Discord](https://discord.gg/aXvuUpvRQs) [Esmile Discord]
+- [Discord](https://discord.gg/aXvuUpvRQs) [Hedystia Discord]
 - [Docs](https://docs.mresmile.com/docs/builders/start)
 
 ## Compatible With
