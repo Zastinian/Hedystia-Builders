@@ -1,6 +1,6 @@
 {
   "name": "hedystia-builders",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
   "types": "index.d.ts",
@@ -18,7 +18,7 @@
     "embeds",
     "hedystia"
   ],
-  "author": "contact@mresmile.com",
+  "author": "contact@hedystia.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zastinian/Hedystia-Builders/issues"
