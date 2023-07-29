@@ -1,8 +1,21 @@
-/* It's a function that returns an object. */
+/**
+ * Represents an embed object with various properties.
+ * @class
+ */
 class Embed {
   /**
-   * It's a function that returns an object.
-   * @returns The embed object.
+   * Constructs an embed object with the provided properties.
+   * @constructor
+   * @param {Object} options - The options object containing the properties for the embed.
+   * @param {string} options.title - The title of the embed.
+   * @param {string} options.color - The color of the embed.
+   * @param {Object} options.author - The author of the embed.
+   * @param {string} options.url - The URL of the embed.
+   * @param {string} options.description - The description of the embed.
+   * @param {string} options.image - The image URL of the embed.
+   * @param {Object} options.footer - The footer of the embed.
+   * @param {string} options.timestamp - The timestamp of the embed.
+   * @returns {Object} - The constructed embed object.
    */
   constructor({title, color, author, url, description, image, footer, timestamp, thumbnail, fields}) {
     this.title = title ?? undefined;

@@ -1,6 +1,6 @@
 {
   "name": "hedystia-builders",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
   "types": "index.d.ts",

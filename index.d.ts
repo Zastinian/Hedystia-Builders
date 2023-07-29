@@ -306,9 +306,9 @@ declare class Embed {
 }
 
 declare class Row {
-  components: any[];
-  constructor(data?: {components: any[]});
-  toObject(): {type: number; components: any[]};
+  components: object[];
+  constructor(data?: {components: object[]});
+  toObject(): {type: number; components: object[]};
 }
 
 declare class SelectMenu {
@@ -399,8 +399,8 @@ export declare const Colors: {
   NOT_QUITE_BLACK: number;
 };
 declare class Util {
-  static resolveColor(color: string): any;
-  static generateISOString(date?: any): any;
+  static resolveColor(color: string | number): number;
+  static generateISOString(date?: Date | number | null): string | null;
 }
 
 type RowBuilderData = {

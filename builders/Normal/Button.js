@@ -1,11 +1,19 @@
-/* It takes in an object with the properties of emoji, label, url, customid, style, and disabled, and
-returns an object with the properties of type, custom_id, style, label, emoji, disabled, and url.
-</code> */
+/**
+ * Represents a button element with various properties.
+ * @class
+ */
 class Button {
   /**
-   * It takes in an object with the properties of emoji, label, url, customid, style, and disabled, and
-   * returns an object with the properties of type, custom_id, style, label, emoji, disabled, and url.
-   * @returns The button object.
+   * Constructs a button object with the provided properties.
+   * @constructor
+   * @param {Object} options - The options object containing the button properties.
+   * @param {Object} options.emoji - The emoji object for the button.
+   * @param {string} options.label - The label text for the button.
+   * @param {string} options.url - The URL to open when the button is clicked.
+   * @param {string} options.customid - The custom ID for the button.
+   * @param {number} options.style - The style of the button.
+   * @param {boolean} options.disabled - Whether the button is disabled or not.
+   * @returns {Object} - The constructed button object.
    */
   constructor({emoji, label, url, customid, style, disabled}) {
     this.emoji = {...emoji} ?? undefined;

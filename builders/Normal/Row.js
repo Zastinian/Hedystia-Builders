@@ -1,11 +1,14 @@
-/* The Row class is a class that creates a row object with a type of 1 and a components property that
-is an array of component objects. */
+/**
+ * Represents a row in a table.
+ * @class
+ */
 class Row {
   /**
-   * It takes an object with a property called components, and returns an object with a property called
-   * components.
-   * @param [data]
-   * @returns The row object.
+   * Constructs a new instance of the class.
+   * @constructor
+   * @param {object} [data] - Optional data object to initialize the instance.
+   * @property {Array} components - The components of the row.
+   * @returns {object} - The constructed instance.
    */
   constructor(data = {}) {
     this.components = data.components;
