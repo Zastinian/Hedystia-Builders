@@ -1,9 +1,9 @@
 ## Installation
 
 ```
-npm i hedystia-builders
+npm i @hedystia/builders
 
-yarn add hedystia-builders
+yarn add @hedystia/builders
 ```
 
 ## Nodejs Version
@@ -13,7 +13,7 @@ yarn add hedystia-builders
 ## Links
 
 - [Discord](https://discord.gg/aXvuUpvRQs) [Hedystia Discord]
-- [Docs](https://docs.hedystia.com/docs/builders/start)
+- [Docs](https://docs.hedystia.com/builders/start)
 
 ## Compatible With
 

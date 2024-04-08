@@ -1,5 +1,5 @@
 {
-  "name": "hedystia-builders",
+  "name": "@hedystia/builders",
   "version": "1.6.4",
   "description": "Builders for discord.js and eris",
   "main": "index.js",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Zastinian/Hedystia-Builders/issues"
   },
-  "homepage": "https://github.com/Zastinian/Hedystia-Builders#readme"
+  "homepage": "https://docs.hedystia.com/builders/start",
+  "publishConfig": {
+    "access": "public"
+  }
 }
